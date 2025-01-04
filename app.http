@@ -1,0 +1,53 @@
+### Get all movie names
+GET http://localhost:3000/movies/
+Content-Type: application/json
+
+###
+
+### Add a new movie
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 1,
+  "movieName": "Inception",
+  "leadActor": "Leonardo DiCaprio"
+}
+
+###
+
+### Get a movie by ID
+GET http://localhost:3000/movies/1/
+Content-Type: application/json
+
+###
+
+### Update movie details by ID
+PUT http://localhost:3000/movies/1/
+Content-Type: application/json
+
+{
+  "directorId": 2,
+  "movieName": "The Dark Knight",
+  "leadActor": "Christian Bale"
+}
+
+###
+
+### Delete a movie by ID
+DELETE http://localhost:3000/movies/1/
+Content-Type: application/json
+
+###
+
+### Get all directors
+GET http://localhost:3000/directors/
+Content-Type: application/json
+
+###
+
+### Get movies by a specific director
+GET http://localhost:3000/directors/1/movies/
+Content-Type: application/json
+
+###
